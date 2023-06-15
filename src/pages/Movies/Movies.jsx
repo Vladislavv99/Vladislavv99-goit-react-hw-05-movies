@@ -3,7 +3,7 @@ import { fetchSearchMovie } from 'services/moviesAPI';
 import { useLocation, useSearchParams } from 'react-router-dom';
 import { Loader } from 'components/Loader/Loader';
 import { Searchbar } from 'components/Searchbar/Searchbar';
-import MoviesGallery from 'components/MoviesGallery/MoviesGallery';
+import  MoviesGallery  from 'components/MoviesGallery/MoviesGallery';
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);

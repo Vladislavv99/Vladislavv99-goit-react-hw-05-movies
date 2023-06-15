@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import s from './Searchbar.module.css';
 
-
 export const Searchbar = ({ getMoviesFromInput }) => {
   const [input, setInput] = useState('');
   const [page] = useState(1);
@@ -32,7 +31,7 @@ export const Searchbar = ({ getMoviesFromInput }) => {
       </label>
 
       <button type="submit" className={s.submit}>
-        Search
+      Search
       </button>
     </form>
   );

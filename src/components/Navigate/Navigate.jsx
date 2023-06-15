@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import s from './Navigate.module.css';
+
  const Navigate = () => {
   return (
     <nav className={s.navigation}>
@@ -24,4 +25,5 @@ import s from './Navigate.module.css';
     </nav>
   );
 };
+
 export default Navigate;
