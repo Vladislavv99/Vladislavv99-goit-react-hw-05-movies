@@ -82,7 +82,7 @@ const MovieDetails = () => {
               <li className={s.additionalItem}>
                 <NavLink
                   to="cast"
-                  state={{ back: location.state.back }}
+                  state={{ back: location.state !== null ? location.state.back: '/' }}
                   className={({ isActive }) =>
                     isActive ? s.active : s.link
                   }
@@ -94,7 +94,7 @@ const MovieDetails = () => {
               <li>
                 <NavLink
                   to="reviews"
-                  state={{ back: location.state.back }}
+                  state={{ back: location.state !== null ? location.state.back: '/' }}
                   className={({ isActive }) =>
                     isActive ? s.active : s.link
                   }
