@@ -8,9 +8,7 @@ const Layout = () => {
   return (
     <>
     <header className={s.header}>
-    <Suspense fallback={<Loader />}>
           <Navigate />
-        </Suspense>
     </header>
         <Outlet />
     </>
